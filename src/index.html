@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gladwin Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins] h-screen">
+    <header class="bg-[#2D6B8E]">
+        <nav class="flex justify-between items-center w-[92%] p-4 mx-auto">
+            <div>
+                <img class=" w-12 cursor-pointer" src="./logo.png" alt="logo">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="text-white hover:text-2xl hover:text-[#F4F497]" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-2xl hover:text-[#F4F497]" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-2xl hover:text-[#F4F497]" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-2xl hover:text-[#F4F497]" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-2xl hover:text-[#F4F497]" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button type="button" onclick="window.open('https://drive.google.com/file/d/1Jnwt7KEzS0uARXyIjwlRuZJ9UY_ahKdc/view?usp=sharing', '_blank')" class="bg-[#7BC7EE] px-5 py-2 rounded-full hover:bg-[#2D6B8E] hover:text-[#F4F497] animate-bounce"> Resume</button>
+            </div>
+        </nav>
+        <div class ="container mx-auto flex justify-center items-center h-[80vh]">
+            <div class="flex justify-between items-center w-[60%] text-left text-5xl text-white">
+                <div>
+                    <h1 class="text-6xl"> Hi, I am <br><span> Gladwin TM </span></h1>
+                    <p class="text-4xl"> and i am <br> <span id="typingHeaderText" class="text-[#F4F497] animate-pulse"></span></p>
+                </div>
+                <img class="w-20 mt-5 h-[50vh] w-[50vh] hover:scale-105 transition-transform" src="./header.png" alt="Face"/>
+            </div>
+        </div>
+    </header>
+    <div>
+        <!-- About Section -->
+        <section id="about" class="bg-[#F4F497] min-h-[90vh] flex flex-col md:flex-row justify-center items-center px-10 py-12 md:py-0">
+        <!-- Image -->
+        <div class="flex justify-center items-center w-full md:w-1/2 mb-10 md:mb-0">
+            <img
+            class="h-[55vh] w-[55vh] max-w-[400px] hover:scale-105 transition-transform duration-300 drop-shadow-xl rounded-2xl"
+            src="./about.png"
+            alt="About Me"
+            />
+        </div>
+
+        <!-- Content -->
+        <div class="w-full md:w-1/2 text-left md:pl-12 space-y-6">
+            <h1 class="text-4xl font-bold text-[#2D6B8E]">About Me</h1>
+            <p class="max-w-xl text-base leading-relaxed text-justify text-gray-800">
+            I’m a passionate developer who loves building web applications with modern technologies.
+            I’m always curious and love exploring new tools and frameworks to enhance my skills.  
+            Currently, I’m part of <strong>CCBP Nxtwave Academy</strong>, where I continuously sharpen my
+            software development and problem-solving abilities.  
+            <br><br>
+            My background in <strong>Business Administration</strong> from Sri Krishna Arts and Science College, Coimbatore,
+            gives me a unique perspective — blending business understanding with technical creativity.
+            I started coding in 2021, and what began as curiosity turned into passion.  
+            <br><br>
+            I’m also interested in <strong>digital marketing</strong>, <strong>business analysis</strong>, and
+            <strong>project management</strong>. My goal is to combine my technical and business skills to build solutions
+            that are not just functional but meaningful for real users.
+            </p>
+        </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white min-h-[90vh] flex flex-col justify-center items-center px-6 py-12">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-[#2D6B8E] mb-4">Projects</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Here are some of the projects I’ve worked on recently. Explore them and check out the code on my GitHub.
+                </p>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="flex flex-wrap justify-center gap-8 w-[85%] max-w-6xl">
+                
+                <!-- Project Card 1 -->
+                <div class="flex flex-col justify-between bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl w-[280px] p-5 shadow-lg transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                <div>
+                    <h3 class="text-center text-xl font-semibold text-[#2D6B8E] mb-3">E-com Website</h3>
+                    <img class="h-[22vh] w-[22vh] mx-auto rounded-md object-cover" src="./EcomHomePage.png" alt="E-com Website" />
+                    <p class="text-sm text-justify mt-3 leading-relaxed text-gray-800">
+                    A full-stack e-commerce application built with <b>React, Node.js, Express, and SQL</b>.
+                    Features include <b> authentication, product listings, shopping cart functionality, and order management </b>.
+                    </p>
+                </div>
+                <button type="button" onclick="window.open('https://github.com/GladwinTM/EcomWebsite')" class="bg-[#7BC7EE] px-4 py-2 rounded-full hover:bg-[#2D6B8E] hover:text-[#F4F497] mt-4 transition">
+                    View Code
+                </button>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="flex flex-col justify-between bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl w-[280px] p-5 shadow-lg transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                <div>
+                    <h3 class="text-center text-xl font-semibold text-[#2D6B8E] mb-3">Learning Pathway Generator</h3>
+                    <img class="h-[22vh] w-[22vh] mx-auto rounded-md object-cover" src="./LearningPathway.png" alt="Learning Pathway Generator" />
+                    <p class="text-sm text-justify mt-3 leading-relaxed text-gray-800">
+                    A web app that generates personalized learning pathways for users based on their skills and career goals.
+                    Built with <b>Python and Streamlit</b>, using ML algorithms to recommend courses and resources.
+                    </p>
+                </div>
+                <button type="button" onclick="window.open('https://github.com/GladwinTM/Learning-PathWay-Creator')" class="bg-[#7BC7EE] px-4 py-2 rounded-full hover:bg-[#2D6B8E] hover:text-[#F4F497] mt-4 transition">
+                    View Code
+                </button>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="flex flex-col justify-between bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl w-[280px] p-5 shadow-lg transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                <div>
+                    <h3 class="text-center text-xl font-semibold text-[#2D6B8E] mb-3">Todo List App</h3>
+                    <img class="h-[22vh] w-[22vh] mx-auto rounded-md object-cover" src="https://private-user-images.githubusercontent.com/177554551/356485538-9da90f9f-d60c-45ce-a03f-25880ca7772d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjAyNTA1MzYsIm5iZiI6MTc2MDI1MDIzNiwicGF0aCI6Ii8xNzc1NTQ1NTEvMzU2NDg1NTM4LTlkYTkwZjlmLWQ2MGMtNDVjZS1hMDNmLTI1ODgwY2E3NzcyZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAxMlQwNjIzNTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MWZmZTEwNmMxYjhjMjhlZDVmZTMxZmVjMmZkNjNkYTViZTczMWJiMWQwMjc1NWFlMWVlNGU3MmI2ZGRjNjNmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.JQYZOXO4TDjCJ_yBI4YoetzbBXXrJQfAyh02Hl9GNRw" alt="Todo List App" />
+                    <p class="text-sm text-justify mt-3 leading-relaxed text-gray-800">
+                        A simple todo list using <b>DOM manipulation</b> in JavaScript. Users can add, edit, delete, and mark tasks as completed. with local storage support and a clean UI.
+                    </p>
+                </div>
+                <button type="button" class="bg-[#7BC7EE] px-4 py-2 rounded-full hover:bg-[#2D6B8E] hover:text-[#F4F497] mt-4 transition">
+                    View Code
+                </button>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="flex flex-col justify-between bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl w-[280px] p-5 shadow-lg transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                <div>
+                    <h3 class="text-center text-xl font-semibold text-[#2D6B8E] mb-3">Library Management System</h3>
+                    <img class="h-[22vh] w-[22vh] mx-auto rounded-md object-cover" src="https://private-user-images.githubusercontent.com/177554551/356471648-b886af6e-585e-4ccc-953f-27ab404153a6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjAyNTA2MjIsIm5iZiI6MTc2MDI1MDMyMiwicGF0aCI6Ii8xNzc1NTQ1NTEvMzU2NDcxNjQ4LWI4ODZhZjZlLTU4NWUtNGNjYy05NTNmLTI3YWI0MDQxNTNhNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAxMlQwNjI1MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05Y2JiODA2MzY2YmI3MTU5MWE5ZWQyMzZiMDQ1YWQ1YzhkOWY4YmM5MmZmNWVhNTM5MTYyYjIzMTM2OTkyYmJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.IFVXTJkKbV3ANxRqRODxoMB8VCV5e8e8H1nxv3ZO5_0" alt="Library Management System" />
+                    <p class="text-sm text-justify mt-3 leading-relaxed text-gray-800">
+                     A Simple Library Management System using <b> JavaScript </b> and Local Storage.
+                     Users can add, view, edit, delete, and search books in the library with a clean UI.
+                    </p>
+                </div>
+                <button type="button" onclick="window.open('https://github.com/GladwinTM/Library-Management-Website')" class="bg-[#7BC7EE] px-4 py-2 rounded-full hover:bg-[#2D6B8E] hover:text-[#F4F497] mt-4 transition">
+                    View Code
+                </button>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="flex flex-col justify-between bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl w-[280px] p-5 shadow-lg transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                <div>
+                    <h3 class="text-center text-xl font-semibold text-[#2D6B8E] mb-3"> Wikipedia Search </h3>
+                    <img class="h-[22vh] w-[22vh] mx-auto rounded-md object-cover" src="https://private-user-images.githubusercontent.com/177554551/356474780-ada38f58-3295-47e4-8411-374cc96844fd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjAyNTI0MzgsIm5iZiI6MTc2MDI1MjEzOCwicGF0aCI6Ii8xNzc1NTQ1NTEvMzU2NDc0NzgwLWFkYTM4ZjU4LTMyOTUtNDdlNC04NDExLTM3NGNjOTY4NDRmZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAxMlQwNjU1MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mOWZkNzQxNzU2MGI1NjEzY2I2MWQyZDJkMGI1MjI5YzAxMWViMTI5ZjJmZmJiNzYyYjIxOTY4ZWEwNGE5ZDlhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.L9zkcofdlqvWW4U6kWi2NBUjAv8f1geAyumI8QtrUKM" alt="" />
+                    <p class="text-sm text-justify mt-3 leading-relaxed text-gray-800">
+                    A JavaScript app that uses the Wikipedia API to let users search and view articles with a clean, responsive design.
+                    </p>
+                </div>
+                <button  type="button" onclick="window.open('https://github.com/GladwinTM/Wikipedia-Search')" class="bg-[#7BC7EE] px-4 py-2 rounded-full hover:bg-[#2D6B8E] hover:text-[#F4F497] mt-4 transition">
+                    View Code
+                </button>
+                </div>
+            </div>
+            </section>
+
+            <section id="skills" class="bg-white min-h-[70vh] flex flex-col justify-center items-center px-6 py-16">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-[#2D6B8E] mb-4">Skills</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Here are the technologies and tools I work with to build efficient, modern web applications.
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 w-full max-w-6xl justify-items-center">
+
+                <!-- HTML -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-12 h-12 mb-3" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">HTML</p>
+                </div>
+
+                <!-- CSS -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-12 h-12 mb-3" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">CSS</p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mb-3" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">JavaScript</p>
+                </div>
+
+                <!-- React -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 mb-3 animate-spin-slow" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">React</p>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind" class="w-12 h-12 mb-3" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">Tailwind</p>
+                </div>
+
+                <!-- Node.js -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mb-3" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">Node.js</p>
+                </div>
+
+                <!-- Express -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="w-12 h-12 mb-3 invert" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">Express</p>
+                </div>
+
+                <!-- Python -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-12 h-12 mb-3" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">Python</p>
+                </div>
+
+                <!-- SQL -->
+                <div class="flex flex-col items-center bg-[#F4F497] border-2 border-[#2D6B8E] rounded-2xl p-6 w-[140px] shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="w-12 h-12 mb-3" />
+                <p class="font-semibold text-[#2D6B8E] text-lg">SQL</p>
+                </div>
+
+            </div>
+            </section>
+
+        <!-- Contact Section -->
+            <section id="contact" class="bg-[#2D6B8E] min-h-[90vh] flex flex-col justify-center items-center text-white px-6 py-16">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold mb-4 text-[#F4F497]">Contact Me</h2>
+                <p class="text-lg max-w-2xl mx-auto text-gray-100">
+                I’d love to connect! Feel free to reach out for collaborations, opportunities, or just a friendly chat.
+                </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="text-center mb-10">
+                <p class="text-lg font-medium">📍 BK-Pudur, Coimbatore, Tamil Nadu, India</p>
+                <p class="text-md mt-2">✉️ gladwintm04@gmail.com</p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center items-center gap-8 flex-wrap">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/_gladwin_" class="group transition-transform transform hover:scale-110">
+                    <div class="bg-[#F4F497] p-3 rounded-full shadow-md hover:bg-[#7BC7EE] transition">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg" alt="Instagram" class="ml-2 w-8 h-8" onerror="this.src='https://cdn-icons-png.flaticon.com/512/174/174855.png'" />
+                    </div>
+                    <p class="text-sm mt-2 text-gray-100 group-hover:text-[#F4F497]"> Instagram </p>
+                </a>
+
+                <!-- GitHub -->
+                <a rel="noopener noreferrer " href="https://github.com/GladwinTM" target="_blank" class="group transition-transform transform hover:scale-110">
+                <div class="bg-[#F4F497] p-3 rounded-full shadow-md hover:bg-[#7BC7EE] transition">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-8 h-8" />
+                </div>
+                <p class="text-sm mt-2 text-gray-100 group-hover:text-[#F4F497]">GitHub</p>
+                </a>
+
+                <!-- LinkedIn -->
+                <a rel="noopener noreferrer " href="https://linkedin.com/in/gladwintm" target="_blank" class="group transition-transform transform hover:scale-110">
+                <div class="bg-[#F4F497] p-3 rounded-full shadow-md hover:bg-[#7BC7EE] transition">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-8 h-8" />
+                </div>
+                <p class="text-sm mt-2 text-gray-100 group-hover:text-[#F4F497]">LinkedIn</p>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:gladwintm04@gmail.com" class="group transition-transform transform hover:scale-110">
+                <div class="bg-[#F4F497] p-3 rounded-full shadow-md hover:bg-[#7BC7EE] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#2D6B8E]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4zm0 0l8 8m8-8l-8 8" />
+                    </svg>
+                </div>
+                <p class="text-sm mt-2 text-gray-100 group-hover:text-[#F4F497]">Email</p>
+                </a>
+            </div>
+
+            <!-- Footer Text -->
+            <div class="mt-12 text-center text-sm text-gray-200">
+                <p>© 2025 Gladwin T M — All Rights Reserved</p>
+            </div>
+            </section>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
