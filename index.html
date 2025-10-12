@@ -17,11 +17,12 @@
 <body class="font-[Poppins] h-screen">
     <header class="bg-[#2D6B8E]">
         <nav class="flex justify-between items-center w-[92%] p-4 mx-auto">
-            <div>
-                <img class=" w-12 cursor-pointer" src="./logo.png" alt="logo">
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl text-white cursor-pointer md:hidden"></ion-icon>
+                <img class=" w-12 cursor-pointer hidden sm:block" src="./logo.png" alt="logo">
             </div>
             <div
-                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                class="nav-links bg-[#2D6B8E] duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
                         <a class="text-white hover:text-2xl hover:text-[#F4F497]" href="#home">Home</a>
@@ -40,17 +41,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex items-center gap-6">
+            <div>
                 <button type="button" onclick="window.open('https://drive.google.com/file/d/1Jnwt7KEzS0uARXyIjwlRuZJ9UY_ahKdc/view?usp=sharing', '_blank')" class="bg-[#7BC7EE] px-5 py-2 rounded-full hover:bg-[#2D6B8E] hover:text-[#F4F497] animate-bounce"> Resume</button>
             </div>
         </nav>
-        <div class ="container mx-auto flex justify-center items-center h-[80vh]">
-            <div class="flex justify-between items-center w-[60%] text-left text-5xl text-white">
+        <div class ="container mx-auto flex justify-center items-center h-[80vh]" id="home">
+            <div class="flex justify-between items-center w-[60%] text-left text-5xl text-white md:w-[80%]">
                 <div>
+                    <img class="w-20 mt-5 h-[20vh] w-[20vh] hover:scale-105 transition-transform block sm:hidden" src="./header.png" alt="Face"/>
                     <h1 class="text-6xl"> Hi, I am <br><span> Gladwin TM </span></h1>
                     <p class="text-4xl"> and i am <br> <span id="typingHeaderText" class="text-[#F4F497] animate-pulse"></span></p>
                 </div>
-                <img class="w-20 mt-5 h-[50vh] w-[50vh] hover:scale-105 transition-transform" src="./header.png" alt="Face"/>
+                <img class="w-20 mt-5 h-[50vh] w-[50vh] hover:scale-105 transition-transform hidden sm:block" src="./header.png" alt="Face"/>
             </div>
         </div>
     </header>
